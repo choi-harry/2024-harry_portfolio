@@ -1,0 +1,32 @@
+/* 초기화값 */
+html,
+body {
+    font-size: 62.5%;
+    font-size: 10px;
+    background: var(--sub-primary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'pretendard';
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.eff {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}

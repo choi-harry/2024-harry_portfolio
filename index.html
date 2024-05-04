@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harry portfolio</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="/image/ffavicon.ico">
+
+    <!-- 제이쿼리&풀페이지 2.9.7 -->
+    <!-- <script src="jquery/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css"> -->
+
+    <!-- 제이쿼리 CDN -->
+    <script src="jquery/jquery.min.js"></script>
+    <!-- 풀페이지 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css">
+    <link rel="stylesheet" href="jquery/jquery.fullpage.css">
+    <script src="jquery/jquery.fullpage.js"></script>
+
+    <!-- 스크롤 오버플로우 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
+    <!-- 기본 css -->
+    <link rel="stylesheet" href="/css/styles.css?ver=1.3">
+    <link rel="stylesheet" href="/css/font.css?ver=1.1">
+
+    <!-- 슬릭슬라이더 스타일 -->
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="page">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="./image/main_logo.png" alt="로고이미지">
+            </a>
+        </h1>
+        <nav>
+            <ul class="mainMenu">
+                <li data-menuanchor="section1" class="active"><a href="#section1">MAIN</a></li>
+                <li data-menuanchor="section2"><a href="#section2">ABOUT</a></li>
+                <li data-menuanchor="section3"><a href="#section3">PROJECT</a></li>
+                <li data-menuanchor="section4"><a href="#section4">WORK GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="fullpage">
+        <!-- 첫번째 섹션 -->
+        <div class="section active" data-anchor="section1">
+            <div class="wrapper">
+                <div class="main_title page">
+                    <h2><span><strong>최</strong>선을</span> 다해서<br>
+                        뭐든지 <span><strong>해</strong>내<strong>리</strong></span></h2>
+                    <ul class="sub_title">
+                        <li class="name_letter"><img src="./image/harry_lettering.png" alt="화살표"></li>
+                        <li>
+                            <p>디자인& 코딩에 최선을 다하는<br>‘웹퍼블리셔 최해리’ 의 개인 포트폴리오 페이지입니다.</p>
+                        </li>
+                        <li class="hi_character">
+                            <img src="./image/hi_character.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="nextpage_arrow"><img src="./image/arrow.png" alt="화살표"></a>
+            </div>
+        </div>
+
+        <div class="section " data-anchor="section2">
+            <div class="wrapper">
+                <h2 class="index_title">about</h2>
+                <div class="about_me">
+                    <div class="character_profile">
+                        <h3><span><strong>최</strong>선을</span> 다해서<br>
+                            뭐든지 <span><strong>해</strong>내<strong>리</strong></span></h3>
+                        <img src="./image/character.png" alt="캐릭터 이미지">
+                    </div>
+                    <div class="tab_wrapper">
+                        <ul class="tab_content">
+                            <!-- #01 프로필소개 ----------------------------------->
+                            <li id="profile" class="activeOn">
+                                <!-- 카테고리 제목 -->
+                                <h3 class="kategory_title">1. 인사말 및 자기소개</h3>
+                                <!-- 내용 -->
+                                <div class="name_tag">
+                                    <p>CHOI HAERI / 최해리(부산)</p>
+                                    <p>1998.04.18</p>
+                                </div>
+                                <div>
+                                    <p>안녕하세요: 반갑습니다.<br>
+                                        이 페이지의 디자이너&개발자인 최해리 입니다.<br>
+                                        -<br>
+                                        저는 디자인 전공생으로 디자인툴을 비교적 자유롭게 구사하며<br>
+                                        지금까지의 디자이너의 감각,에티튜드를 비롯해 웹 환경의 사용자를 위해<br>
+                                        '디자인과 개발' 모두 노력과 정성을 아끼지 않을 예비 웹퍼블리셔 입니다.<br>
+                                        아직은 부족함이 많은 첫 걸음이지만,<br>
+                                        함께할 미래의 동료분들과 함께 즐겁게 성장하고자 합니다.
+                                    </p>
+                                </div>
+                            </li>
+                            <!-- #02 교육이수 ----------------------------------->
+                            <li id="education">
+                                <h3 class="kategory_title">2. 학력및 교육이수</h3>
+
+                                <ul class="sub_tabmenu detail_tab">
+                                    <li class="activeOn"><a href="#edu_01">학력 및 교육이수</a></li>
+                                    <li><a href="#edu_02">활동내역</a></li>
+                                </ul>
+
+                                <div class="sub_tab_container">
+                                    <!-- 학력,교육 내용 -->
+                                    <ul id="edu_01" class="activeOn">
+                                        <li class="one_depth">
+                                            <h4 class="list_name">그린 컴퓨터 아카데미</h4>
+                                            <p>: 웹퍼블리셔 양성과정 (5개월)</p>
+                                            <span class="date">23.08 - 01</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">동서대학교 디자인학부</h4>
+                                            <p>: [전공]광고디자인,그래픽 루트 (21년도 졸업)</p>
+                                            <span class="date">17.03 - 21.02</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">부산 분포고등학교</h4>
+                                            <p>: 용호초등학교/ 용문중학교 / 분포고등학교</p>
+                                            <span class="date">00.00 - 17.02</span>
+                                        </li>
+                                    </ul>
+                                    <!-- 활동사항 내용 -->
+                                    <ul id="edu_02">
+                                        <li class="one_depth">
+                                            <h4 class="list_name">공유대학 유니파크</h4>
+                                            <p>: ‘고딩스’잡지활동</p>
+                                            <span class="date">19.03-21.03</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">달맞이길 도시탐사단</h4>
+                                            <p>: ‘달맞이길BI’제작 3등</p>
+                                            <span class="date">19.08-19.12 </span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">동서대학교 캡스톤 경진대회</h4>
+                                            <p>: 교내 과제물 '자갈치시장 패키지' 우수상 시상</p>
+                                            <span class="date">19.11</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">부산,울산 옥외광고전</h4>
+                                            <p>: 옥외광고 '한과이야기 간판' 특선</p>
+                                            <span class="date">19.12</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">동서대학교 미술실기대회</h4>
+                                            <p>: 고등학생 실기대회 '발상과 표현'부문 특선</p>
+                                            <span class="date">16.04</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- #03 자격증 ----------------------------------->
+                            <li id="license">
+                                <h3 class="kategory_title">3. 경력및 자격증</h3>
+
+                                <ul class="sub_tabmenu detail_tab">
+                                    <li class="activeOn"><a href="#lice_01">경력 및 스킬</a></li>
+                                    <li><a href="#lice_02">자격증</a></li>
+                                </ul>
+                                <div class="sub_tab_container">
+                                    <!-- 경력, 스킬사항  --------------------------------------->
+                                    <ul id="lice_01" class="activeOn">
+                                        <li class="one_depth">
+                                            <h4 class="list_name">브랜드어스 (Brand us)</h4>
+                                            <p>: 브랜드기획 디자인/ 모션그래픽 </p>
+                                            <span class="date">23.04 - 07</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">에스에이치컴퍼니 (SH company)</h4>
+                                            <p>: 산하브랜드 브랜딩/패키징, 소셜미디어 컨텐츠 디자인</p>
+                                            <span class="date">21.05 - 22.06</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <img src="./image/skill.svg" alt="작업스킬 역량표">
+                                        </li>
+                                    </ul>
+                                    <!-- 자격증  --------------------------------------->
+                                    <ul id="lice_02">
+                                        <li class="one_depth">
+                                            <h4 class="list_name">웹 디자인 기능사</h4>
+                                            <span class="date">2024.02</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">컴퓨터 그래픽스 운용기능사</h4>
+                                            <span class="date">2021.05</span>
+                                        </li>
+                                        <li class="one_depth">
+                                            <h4 class="list_name">자동차운전면허 1종 보통</h4>
+                                            <span class="date">2019.04</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="tab_btn">
+                            <li class="thinBtn activeOn"><a href="#profile">인사및 소개</a></li>
+                            <li class="thinBtn"><a href="#education">학력및 교육이수</a></li>
+                            <li class="thinBtn"><a href="#license">경력자격증</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section  project_section" data-anchor="section3">
+            <div class="wrapper">
+                <!-- 타이틀제목 -->
+                <h2 class="index_title">project</h2>
+                <div class="slick_slider">
+                    <div class="slider_box indexpage_content tab-idx01">
+                        <!-- 1 -->
+                        <div class="items activeOn">
+                            <a href="#">
+                                <h3>01.웹퍼블리싱</h3>
+                                <div>
+                                    <h2>WEB <br>PUBLISHING</h2>
+                                    <p>웹사이트에서 보이는 영역을 구조화 및 코드로 구현</p>
+                                </div>
+                                <button class="more_btn">
+                                    MORE
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="slider_box DetailedPage" >
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item1" class="modal_btn">
+                            <!-- https://choi-harry.github.io/pawinhand/ -->
+                            <dl class="info_box">
+                                <dt class="info_title">#포인핸드 shop</dt>
+                                <dd class="info_text">유기동물 보호단체의 홍보성 쇼핑몰 홈페이지 제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project01.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item2">
+                            <dl class="info_box">
+                                <dt class="info_title">#질레트 면도기</dt>
+                                <dd class="info_text">질레트의 실험적인 신제품 홈페이지제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project02.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item3">
+                            <dl class="info_box">
+                                <dt class="info_title">#블루샥 커피</dt>
+                                <dd class="info_text">블루샥 이미지를 녹여낸 홈페이지제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project03.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <div class="slider_box indexpage_content tab-idx02">
+                        <!-- 5 -->
+                        <div class="items activeOn">
+                            <a href="#">
+                                <h3>02.그래픽</h3>
+                                <div>
+                                    <h2>GRAPHIC DESIGN</h2>
+                                    <p>브랜드에 필요한 다양한 용도의 그래픽요소 제작</p>
+                                </div>
+                                <button class="more_btn">
+                                    MORE
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item4">
+                            <dl class="info_box">
+                                <dt class="info_title">#야한쭈꾸미 #외식업 리브랜드</dt>
+                                <dd class="info_text">기존 요식업 브랜드를 리브랜딩</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project04.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item5">
+                            <dl class="info_box">
+                                <dt class="info_title">#다섯시반 #한식주점</dt>
+                                <dd class="info_text">한식주점의 감성돋는 브랜딩</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project05.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item6">
+                            <dl class="info_box">
+                                <dt class="info_title">#하이앤드 하우스</dt>
+                                <dd class="info_text">게스트하우스 로고,캐릭터 브랜딩</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project06.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <div class="slider_box indexpage_content tab-idx03">
+                        <!-- 9 -->
+                        <div class="items activeOn">
+                            <a href="#">
+                                <h3>03.편집디자인</h3>
+                                <div>
+                                    <h2>EDITORIAL DESIGN</h2>
+                                    <p>웹사이트에서 보이는 영역을 구조화 및 코드로 구현</p>
+                                </div>
+                                <button class="more_btn">
+                                    MORE
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 10 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item7">
+                            <dl class="info_box">
+                                <dt class="info_title">#물만골마을 #소책자</dt>
+                                <dd class="info_text">[외주]물만골마을의 지원사업 보고서 소책자제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project07.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 11 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="https://thinksmagazine.creatorlink.net/" id="project_item8">
+                            <dl class="info_box">
+                                <dt class="info_title">#thinks #웹진</dt>
+                                <dd class="info_text">[활동]고등학생 에디터& 대학생디자이너의 매거진제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project08.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 12 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item9">
+                            <dl class="info_box">
+                                <dt class="info_title">#오징어짬뽕 #캐릭터 공모전</dt>
+                                <dd class="info_text">[공모전] 캐릭터및 소개페이지 제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project09.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <div class="slider_box indexpage_content tab-idx04">
+                        <!-- 13 -->
+                        <div class="items activeOn">
+                            <a href="#">
+                                <h3>04.패키지,굿즈제작</h3>
+                                <div>
+                                    <h2>PACKAGE DESIGN</h2>
+                                    <p>굿즈상품 및 식품패키지 제작</p>
+                                </div>
+                                <button class="more_btn">
+                                    MORE
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 14 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item10">
+                            <dl class="info_box">
+                                <dt class="info_title">#빨간어묵 #외식업 #패키지</dt>
+                                <dd class="info_text">분식류 밀키트 패키지제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="/image/project10.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 15 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="https://thinksmagazine.creatorlink.net/" id="project_item11">
+                            <dl class="info_box">
+                                <dt class="info_title">#옛맛식품 #이커머스 #패키지</dt>
+                                <dd class="info_text">식자재유통 PL상품 패키지제작</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project11.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                    <!-- 16 -->
+                    <div class="slider_box DetailedPage">
+                        <!-- 클릭할 영역및 링크 -->
+                        <a href="#" id="project_item12">
+                            <dl class="info_box">
+                                <dt class="info_title">#대패가1900 #외식업</dt>
+                                <dd class="info_text">외식업 대패전문 브랜드의 리뉴얼디자인</dd>
+                            </dl>
+                            <i class="icon srch_i eff"><img src="./image/srch_i.png" alt="검색아이콘"></i>
+                        </a>
+                        <!-- 이미지 배경 -->
+                        <div class="projectImg_bg">
+                            <img src="./image/project12.jpg" alt="프로젝트 이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="section " data-anchor="section4">
+            <div class="wrapper f_w">
+                <h2 class="index_title">Personal Work</h2>
+                <div class="gallery_container">
+                    <ul>
+                        <li><img src="./image/연스지.jpg" alt=""></li>
+                        <li><img src="./image/해녀며느리.jpg" alt=""></li>
+                        <li><img src="./image/물만골.jpg" alt=""></li>
+                        <li><img src="./image/고딩스.jpg" alt=""></li>
+                        <li><img src="./image/오하오.jpg" alt=""></li>
+
+                        <li><img src="./image/gallery01.png" alt=""></li>
+                        <li><img src="./image/gallery02.jpg" alt=""></li>
+                        <li><img src="./image/gallery06-08.jpg" alt=""></li>
+                        <li><img src="./image/gallery04.jpg" alt=""></li>
+                        <li><img src="./image/gallery05.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <footer>
+                    <div class="f_top">
+                        <ul class="footer_menu">
+                            <li><a href="#section1">MAIN</a></li>
+                            <li><a href="#section2">ABOUT</a></li>
+                            <li><a href="#section3">PROJECT</a></li>
+                            <li><a href="#section4">WORK GALLERY</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_bottom">
+                        <div class="copyright">
+                            <p>ⓒ 2024 Harry. All rights reserved.</p>
+                            <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오로 제작되었습니다. </p>
+                        </div>
+                        <div class="footer_logo">
+                            <a href="#section1"><img src="./image/footer_w_logo.png" alt=""></a>
+                        </div>
+                        <ul class="sns">
+                            <li><a href="mailto:gofl4198@gmail.com"><img src="./image/sns_gmaile.png" alt="메일 아이콘"></a>
+                            </li>
+                            <li><a href="https://open.kakao.com/o/sFplu4kg"><img src="./image/sns_kakao.png"
+                                        alt="카카오 아이콘"></a></li>
+                            <li><a href="https://harry-go.tistory.com/"><img src="./image/sns_tistory.png"
+                                        alt="블로그 아이콘"></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <a href="#section1" id="up_btn">
+        TOP
+    </a>
+
+    <div id="fp-nav">
+        <ul>
+            <li><a href="#section1"></a></li>
+            <li><a href="#section2"></a></li>
+            <li><a href="#section3"></a></li>
+            <li><a href="#section4"></a></li>
+        </ul>
+    </div>
+    <div class="project_popup">
+        <nav class="project_header">
+            <ul class="project_title_name">
+                <li><h2 class="project_name">1. WEB 홈페이지리뉴얼 ㅣ 포인핸즈</h2></li>
+                <li><h2 class="project_name">1. WEB 신제품이벤트페이지 ㅣ 질레트</h2></li>
+                <li><h2 class="project_name">1. WEB 홈페이지리뉴얼 ㅣ 블루샥</h2></li>
+                
+                <li><h2 class="project_name">2. GRAPHIC 로고디자인 ㅣ 야한쭈꾸미</h2></li>
+                <li><h2 class="project_name">2. GRAPHIC 로고디자인 ㅣ 다섯시반</h2></li>
+                <li><h2 class="project_name">2. GRAPHIC 로고,캐릭터디자인 ㅣ 하이앤드하우스</h2></li>
+    
+                <li><h2 class="project_name">3. EDITORIAL 소책자 ㅣ 물만골마을</h2></li>
+                <li><h2 class="project_name">3. EDITORIAL 매거진 ㅣ 고딩스/띵스</h2></li>
+                <li><h2 class="project_name">3. EDITORIAL 캐릭터페이지 ㅣ 오징어짬뽕</h2></li>
+
+                <li><h2 class="project_name">4. PACKAGE 밀키트 ㅣ 빨간어묵</h2></li>
+                <li><h2 class="project_name">4. PACKAGE PL상품 ㅣ 옛맛식품</h2></li>
+                <li><h2 class="project_name">4. PACKAGE 굿즈상품 ㅣ 대패가1900</h2></li>
+            </ul>
+            <div class="modal_close_btn">X</div>
+        </nav>
+        <ul class="scroll">
+            <li class="activeOn">
+                <img src="./image/project_01.jpg" alt="">
+                <div class="detail_butt_wrap">
+                    <a href="https://1drv.ms/b/s!AiNbVHZG_DtojW6mK35T-2WXQJ_o?e=fFtqLC&download=1">기획서 다운</a>
+                    <a href="#">웹사이트 바로가기</a>
+                </div>
+            </li> 
+            <li><img src="./image/project_02.jpg" alt=""></li>
+            <li><img src="./image/project_03.jpg" alt=""></li>
+
+            <li><img src="./image/project_04.jpg" alt=""></li>
+            <li><img src="./image/project_05.jpg" alt=""></li>
+            <li><img src="./image/project_06.jpg" alt=""></li>
+            
+            <li><img src="./image/Coming soon.jpg" alt=""></li>
+            <li><img src="./image/Coming soon.jpg" alt=""></li>
+            <li><img src="./image/project_09.jpg" alt=""></li>
+
+            <li><img src="./image/Coming soon.jpg" alt=""></li>
+            <li><img src="./image/Coming soon.jpg" alt=""></li>
+            <li><img src="./image/Coming soon.jpg" alt=""></li>
+            <!-- <a href="https://kr.freepik.com/free-vector/realistic-tape-collection_21777803.htm#query=%ED%85%8C%EC%9D%B4%ED%94%84%20png&position=0&from_view=keyword&track=ais&uuid=d639d7cb-c9a3-436e-9fd4-f66decafb962">작가 pikisuperstar</a> 출처 Freepik -->
+        </ul>
+    </div>
+    <!-- 슬릭슬라이더 -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick_slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: true, //슬라이드 네비게이션(페이징
+                autoplay: true,//슬라이드 자동
+                autoplaySpeed: 2000, //자동으로 돌아가는 시간 10000
+            });
+            
+        });
+        </script>
+        <!-- 메인 스크립트 파일 -->
+        <script defer src="js/main.js"></script>
+</body>
+
+</html>

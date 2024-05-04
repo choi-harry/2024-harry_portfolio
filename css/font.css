@@ -1,0 +1,28 @@
+/* pretendard 본문용 서체 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
+/* Homemade Apple 영문 필기체 */
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+:root{
+    /* 폰트 */
+    --font-family : 'Homemade Apple';
+    --font-weight : 400;
+    --font-style : normal;
+    /* 컬러 */
+    --main-primary-color:#2E7EA5; 
+    --sub-primary-color:#F4F1EB;
+    --secondary-color:#C44363;
+    --second-dark-color:#662e3e;
+    --neutral-light-color:#E8D2C6;
+
+    /* 그외 후보컬러
+    --main-color:#4978f4; 
+    --point-color:#FFFBDE;
+    --light-color:#a4bbf9;
+    
+    --main-color:#3BA975;
+    --main-color:#4978f4; 
+    --light-color:#a4bbf9;
+    */
+}
