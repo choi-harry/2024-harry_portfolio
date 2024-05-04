@@ -849,21 +849,62 @@ nav>ul>li+li::after {
 /* .project_name.activeOn{
     color: #000;
 } */
-.detail_butt_wrap{
-    width: 50%;
-    height: 10vh;
-    padding: 1vh 0;
-    display: flex;
-    justify-content: center;
 
+
+.detail_butt_wrap{
+    width: 100%;
+    height: 20vh;
+    position: relative;
 }
-.detail_butt_wrap a{
-    display: block;
-    height: 30px;
+.detail_butt{
+    width: 450px;
+    height: 58px;
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    padding: 5px;
+    transform: translate(-50%);
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    /*  */
+}
+
+.detail_butt a{
+    flex: 1;
+    height: 100%;
+    text-align: center;
     border-radius: 30px;
-    padding: 10px 30px;
-    color: #fff;
-    background: var(--main-primary-color);
+    padding: 16px 0;
+    /* display: inline-block; */
+    color: var(--main-primary-color);
+    /* background: var(--main-primary-color); */
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
+.detail_butt a.activeOn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 2px solid var(--main-primary-color);
+    /* background: var(--main-primary-color); */
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.detail_butt a:hover{
+       background: var(--main-primary-color);
+       color: #fff; 
 }
 .modal_close_btn{
     width: 60px;
@@ -876,7 +917,7 @@ nav>ul>li+li::after {
 }
 
 /* 화면 영역 */
-.project_popup .scroll li{
+/* .project_popup>.scroll>li{
     width: 1000px;
     height: 90vh;
     background: #fff;
@@ -886,10 +927,32 @@ nav>ul>li+li::after {
     left: 50%;
     transform: translate(-50%); 
     overflow-y: scroll;
-    /* padding: 50px 30px; */
-    display: none;
-}
 
+
+    padding: 50px 30px;
+} */
+
+/* 변경 테스트중 ===============================*/
+.project_popup>.scroll>li{
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%); 
+    display: flex;
+}
+.left_box{
+    width: 1000px;
+    height: 90vh;
+    background: #fff;
+    border-radius: 10px 10px 0 0 ;
+    overflow-y: scroll;
+}
+.right_DescriptionBox{
+    width: 400px;
+    height: 90vh;
+    border: 1px solid #ccc;
+}
+/* 변경중 ===============================*/
 .project_popup img{
     width: 100%;
     /* padding: 0 80px; */
