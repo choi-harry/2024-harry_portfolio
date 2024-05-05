@@ -81,7 +81,7 @@ var page = $('.fullpage').fullpage({
 
 //modal popup 스크롤해제(강현주 포폴에서 참고함)
 
-let activePage = $('.project_popup>.scroll li');
+let activePage = $('.project_popup>.scroll>li');
 let projectName = $('.project_name');
 let projectNum = $('.DetailedPage');
 
@@ -89,9 +89,10 @@ let projectNum = $('.DetailedPage');
   $(this).find('a').on('click', function(e) {
     e.preventDefault();
     $('.project_popup').addClass('activeOn');
-    activePage.css('display', 'none');
-    activePage.eq(index).css('display', 'block');
-
+    // 애니메이션 재생
+    activePage.removeClass('active_on');
+    $('.scrolldownAni').animate({opacity:1},3000).fadeOut();
+    activePage.eq(index).addClass('active_on');
     projectName.css('display', 'none');
     projectName.eq(index).css('display', 'block');
     $.fn.fullpage.setAllowScrolling(false); //풀페이지 스크롤 해제
@@ -101,6 +102,9 @@ let projectNum = $('.DetailedPage');
     });
   });
 });
+// setTimeout(function (){
+//   $(".scrolldownAni").animate().fadeOut(); // 3초 후에 요소 숨기기
+// }, 3000);
 
 $('.project_popup .modal_close_btn').each(function() {
   $(this).on('click', function() {
@@ -118,7 +122,11 @@ $('.project_popup').each(function() {
   });
 });
 
+let textBox =$('.right_DescriptionBox');
 
+$(".modal_sm_btn").click(function(){
+  textBox.toggle();
+});
 //슬라이드 이미지 디테일페이지
 // 1.클릭할 대상
 // let project = $('.slick_slider .DetailedPage a');

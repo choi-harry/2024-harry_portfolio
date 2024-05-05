@@ -813,6 +813,7 @@ nav>ul>li+li::after {
             모달 팝업창
 ================================= 
 */
+/* 팝업창 최상위 부모 */
 .project_popup{
     width: 100vw;
     height: 100vh;
@@ -823,149 +824,237 @@ nav>ul>li+li::after {
     background: rgba(0, 0, 0, 0.9);
     display: none;
 }
+/* 826 */
 .project_popup.activeOn{
     display: block;
 }
+
 /* nav 영역 */
 .project_header{
     position: relative;
-    width: 1000px;
-    height: 50px;
+    width: 75%;
+    height: 6vh;
+    top: 0;
     left: 50%;
-    top: 4.5vh;
     transform: translate(-50%); 
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+/* 팝업창 nav 파일명 */
+/* .project_title_name>li{
+    font-size: 1.8rem;
+    padding: 2vh 10px;
+} */
 .project_name{
     font-size: 1.8rem;
-    line-height: 50px;
-    font-weight: normal;
-    position: absolute;
-    padding: 0 10px;
-    color: #fff;
+    /* line-height: 50px; */
+    /* position: absolute;
+    padding: 0 10px; */
+    color: rgba(255, 255, 255, 0.5);
     display: none;
 }
-/* .project_name.activeOn{
-    color: #000;
-} */
-
-
-.detail_butt_wrap{
-    width: 100%;
-    height: 20vh;
-    position: relative;
-}
-.detail_butt{
-    width: 450px;
-    height: 58px;
+/* 팝업창 nav 닫기버튼 */
+.modal_btn_wrap{
     position: absolute;
-    top: 5vh;
-    left: 50%;
-    padding: 5px;
-    transform: translate(-50%);
+    right: 0;
+    top: 25%;
+}
+/* 팝업축소버튼,닫힘버튼 */
+.modal_sm_btn, .modal_close_btn {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 3px;
+    border-radius: 30px;
+    background: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.5rem;
+}
+.scrolldownAni {
+    width: 68%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* filter: blur(12px); */
+    opacity: 0;
+    position: absolute;
+}
+
+
+/* 타이틀 animate 나타내기& 사라지기 */
+@keyframes scrolldownAni {
+    0% {
+        top: 30%;
+        opacity: 1;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+
+.detail_butt{
+    width: 100%;
+    height: 56px;
+    background: #fff;
     /* border: 1px solid #ccc; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    padding: 8px;
     border-radius: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
-    /*  */
+    gap: 8px;
 }
 
-.detail_butt a{
+.detail_butt button{
     flex: 1;
     height: 100%;
-    text-align: center;
     border-radius: 30px;
-    padding: 16px 0;
+    /* padding: 16px 0; */
+    align-items: center;
     /* display: inline-block; */
     color: var(--main-primary-color);
-    /* background: var(--main-primary-color); */
     font-size: 1.4rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    position: relative;
+    border: none;
+    background: transparent;
 }
-.detail_butt a.activeOn::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    box-sizing: border-box;
-    border: 2px solid var(--main-primary-color);
-    /* background: var(--main-primary-color); */
-    top: 0;
-    left: 0;
-    z-index: -2;
+.detail_butt button.activeOn{
+    border: 1px solid var(--main-primary-color);
+    background: rgba(224, 224, 224, 0.5);
 }
-.detail_butt a:hover{
+.detail_butt button:hover{
        background: var(--main-primary-color);
        color: #fff; 
 }
-.modal_close_btn{
-    width: 60px;
-    height: 24px;
-    border-radius: 30px;
-    text-align: center;
-    line-height: 30px;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-}
 
 /* 화면 영역 */
-/* .project_popup>.scroll>li{
-    width: 1000px;
-    height: 90vh;
+.project_popup>.scroll>li:not(.web_proj){
+    max-width: 1400px;
+    width: 75%;
+    height: 94vh;
     background: #fff;
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
     position: absolute;
-    top: 10vh;
+    top: 6vh;
     left: 50%;
-    transform: translate(-50%); 
+    transform: translate(-50%);
     overflow-y: scroll;
-
-
     padding: 50px 30px;
-} */
-
+    display: none;
+}
+.project_popup>.scroll>li:not(.web_proj).active_on{
+    display: block;
+}
 /* 변경 테스트중 ===============================*/
-.project_popup>.scroll>li{
+.project_popup .scroll .web_proj{
+    display: none;
+}
+.project_popup .scroll .web_proj.active_on{
+    width: 80%;
+    max-width: 1400px;
+    width: 75%;
     position: absolute;
-    top: 10vh;
+    top: 6vh;
     left: 50%;
-    transform: translate(-50%); 
-    display: flex;
+    transform: translate(-50%);
+    display: flex !important;
+    gap: 1%;
 }
 .left_box{
-    width: 1000px;
-    height: 90vh;
+    /* width: 1000px; */
+    flex: 1;
+    height: 94vh;
     background: #fff;
     border-radius: 10px 10px 0 0 ;
     overflow-y: scroll;
 }
 .right_DescriptionBox{
-    width: 400px;
-    height: 90vh;
-    border: 1px solid #ccc;
+    width: 32%;
+    /* max-width: 350px; */
+    min-width: 300px;
+    height: 94vh;
+    /* border: 1px solid #ccc; */
+    position: relative;
+    display: none;
 }
-/* 변경중 ===============================*/
+.right_DescriptionBox.active_on{
+    display: block;
+}
+/* 오른쪽 프로젝트설명 텍스트박스 */
+.description_info{
+    width: 100%;
+    max-height: 80vh;
+    overflow: scroll;
+    padding: 4vh 20px 100px;
+    border-radius: 0 0 10px 10px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+}
+.description_info li{
+    display: block !important;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.description_info ul>li:hover a{
+    background: rgba(169, 213, 255, 0.5);
+}
+.description_info li ul{
+    padding-left: 1.6rem;
+    padding-bottom: 2rem;
+}
+.description_info ul>li{
+    font-size: 1.6rem;
+}
+.proj_info a{
+    display: block!important;
+    /* padding-left: 1.4rem; */
+    color: var(--main-primary-color);
+    /* border-bottom: 1px solid var(--main-primary-color); */
+    border-radius: 30px;
+}
+.proj_info{
+    border-top: 1px solid #e5e5e5;
+    padding-inline: 0 1rem;
+}
+/* 기획서/웹사이트 바로가기 버튼 */
+.right_DescriptionBox .detail_butt_wrap{
+    width: 90%;
+    position: absolute;
+    right: 50%;
+    bottom: 3vh;
+    transform: translate(50%);
+}
+/* .right_DescriptionBox .detail_butt{
+    width: 100%;
+    background: #fff;
+} */
+
+/* 상세페이지 이미지 */
 .project_popup img{
     width: 100%;
     /* padding: 0 80px; */
     object-fit: cover;
 }
-.modal_close_btn{
+.scrolldownAni>img{
+    width: 60px;
+    object-fit: cover;
     position: absolute;
-    top: 10px;
-    right: 10px;
-
-    width: 30px;
-    height: 30px;
+    top: 30%;left: 50%;
+    transform: translate(-50%,-50%);
+    animation: scrolldownAni 1.6s ease;
+    animation-iteration-count: 2;
+    opacity: 0;
 }
+/* 변경중 ===============================*/
+
 
     /* .project_popup.scroll li::-webkit-scrollbar {
     width: 8px; 스크롤바의 너비
