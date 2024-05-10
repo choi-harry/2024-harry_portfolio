@@ -25,6 +25,10 @@ html {
     margin: 0 auto;
 }
 
+.slick-dots li button:before {
+    font-size: 3.2rem!important;
+}
+
 /* ==============================================================================
                                   HEADER
 =============================================================================== */
@@ -234,13 +238,20 @@ nav>ul>li+li::after {
 .hi_character:hover{
     filter: drop-shadow(4px 5px 5px rgb(0 0 0 / 0.1));
 }
-
 .hi_character img {
     width: 80%;
     padding: 16px;
     position: absolute;
     top: 8%;
     left: 20%;
+    transform-origin: center;
+    transition: all 0.1s ease-in;
+}
+.hi_character:hover img {
+    width: 84%;
+    top: 6%;
+    left: 18%;
+    transform-origin: center;
 }
 
 /* ====================================
@@ -778,7 +789,7 @@ nav>ul>li+li::after {
 
 .slider_box .items button {
     padding: 8px 12px;
-    width: 36%;
+    width: 30%;
     border-radius: 20px;
     position: absolute;
     bottom: 0px;
@@ -800,7 +811,7 @@ nav>ul>li+li::after {
     right: 20px;
     align-items: center;
     transform: translate(0, -50%);
-    background: url(../image/웹\ 홈페이지_ver3-30.svg)0 0/100% no-repeat;
+    background: url(../image/arrow2.svg)0 0/100% no-repeat;
     transition: all 0.3s ease;
 }
 .slider_box .items button:hover::after {
@@ -1023,6 +1034,58 @@ nav>ul>li+li::after {
 .proj_info{
     border-top: 1px solid #e5e5e5;
     padding-inline: 0 1rem;
+}
+/* 프로젝트 설명박스 >브랜드컬러 */
+.brandColor ul{
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+.brandColor .color_bar{
+    width: 50px;
+    height: 20px;
+
+    border-radius: 30px;
+    background: #ccc;
+}
+.brandColor .color_bar.subColor{
+    width: 20px;
+}
+/* 포인핸드 컬러 */
+#pawinhand_Color li:nth-child(1){
+    background: #FFC029;
+} 
+#pawinhand_Color li:nth-child(2){
+    background: #3F3533;
+} 
+#pawinhand_Color li:nth-child(3){
+    background: #84E551;
+} 
+#pawinhand_Color li:nth-child(4){
+    background: #7DC7FF;
+} 
+#pawinhand_Color li:nth-child(5){
+    background: #FF7ABA;
+} 
+/* 질렡트 컬러 */
+#gillette_Color li:nth-child(1){
+    background: #00ff41;
+}
+#gillette_Color li:nth-child(2){
+    background: #f3d697;
+}
+#gillette_Color li:nth-child(3){
+    background: #f9f6ec;
+}
+/* 블루샥 컬러 */
+#blushaak_Color li:nth-child(1){
+    background: #4a80bb;
+}
+#blushaak_Color li:nth-child(2){
+    background: #f3d697;
+}
+#blushaak_Color li:nth-child(3){
+    background: #f9f2de;
 }
 /* 기획서/웹사이트 바로가기 버튼 */
 .right_DescriptionBox .detail_butt_wrap{
