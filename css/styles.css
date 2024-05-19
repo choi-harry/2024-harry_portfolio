@@ -836,9 +836,9 @@ nav>ul>li+li::after {
     display: none;
 }
 /* 826 */
-.project_popup.activeOn{
+/* .project_popup.activeOn{
     display: block;
-}
+} */
 
 /* nav 영역 */
 .project_header{
@@ -1001,7 +1001,7 @@ nav>ul>li+li::after {
 .description_info{
     width: 100%;
     max-height: 80vh;
-    overflow: scroll;
+    overflow: scrollY;
     padding: 4vh 20px 100px;
     border-radius: 0 0 10px 10px;
     background: #fff;
