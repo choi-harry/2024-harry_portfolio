@@ -12,6 +12,8 @@
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
     <link type="text/css" rel="stylesheet" href="./css/font.css">
     <link type="text/css" rel="stylesheet" href="./css/reset.css">
+    <!-- pretendard -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
     <!-- 제이쿼리&풀페이지 2.9.7 -->
     <!-- <script src="jquery/jquery.min.js"></script>
@@ -67,7 +69,7 @@
                             <p>디자인& 코딩에 최선을 다하는<br>‘웹퍼블리셔 최해리’ 의 개인 포트폴리오 페이지입니다.</p>
                         </li>
                         <li class="hi_character">
-                            <img src="./image/hi_character.png" alt="">
+                            <img id="wink" src="./image/hi_character.png" alt="캐릭터 이미지">
                         </li>
                     </ul>
                 </div>
@@ -169,11 +171,11 @@
                             <li id="license">
                                 <h3 class="kategory_title">3. 경력및 자격증</h3>
 
-                                <ul class="sub_tabmenu detail_tab">
+                                <ul class="sub_tabmenu detail_tab2">
                                     <li class="activeOn"><a href="#lice_01">경력 및 스킬</a></li>
                                     <li><a href="#lice_02">자격증</a></li>
                                 </ul>
-                                <div class="sub_tab_container">
+                                <div class="sub_tab_container stc2">
                                     <!-- 경력, 스킬사항  --------------------------------------->
                                     <ul id="lice_01" class="activeOn">
                                         <li class="one_depth">
@@ -194,7 +196,7 @@
                                     <ul id="lice_02">
                                         <li class="one_depth">
                                             <h4 class="list_name">웹 디자인 기능사</h4>
-                                            <span class="date">2024.02</span>
+                                            <span class="date">2024.04</span>
                                         </li>
                                         <li class="one_depth">
                                             <h4 class="list_name">컴퓨터 그래픽스 운용기능사</h4>
@@ -233,7 +235,7 @@
                                     <p>웹사이트에서 보이는 영역을 구조화 및 코드로 구현</p>
                                 </div>
                                 <button class="more_btn">
-                                    MORE
+                                    NEXT
                                 </button>
                             </a>
                         </div>
@@ -294,7 +296,7 @@
                                     <p>브랜드에 필요한 다양한 용도의 그래픽요소 제작</p>
                                 </div>
                                 <button class="more_btn">
-                                    MORE
+                                    NEXT
                                 </button>
                             </a>
                         </div>
@@ -354,7 +356,7 @@
                                     <p>웹사이트에서 보이는 영역을 구조화 및 코드로 구현</p>
                                 </div>
                                 <button class="more_btn">
-                                    MORE
+                                    NEXT
                                 </button>
                             </a>
                         </div>
@@ -414,7 +416,7 @@
                                     <p>굿즈상품 및 식품패키지 제작</p>
                                 </div>
                                 <button class="more_btn">
-                                    MORE
+                                    NEXT
                                 </button>
                             </a>
                         </div>
@@ -473,17 +475,17 @@
                 <h2 class="index_title">Personal Work</h2>
                 <div class="gallery_container">
                     <ul>
-                        <li><img src="./image/gallery01.jpg" alt=""></li>
-                        <li><img src="./image/gallery02.jpg" alt=""></li>
-                        <li><img src="./image/gallery03.jpg" alt=""></li>
-                        <li><img src="./image/gallery05.jpg" alt=""></li>
-                        <li><img src="./image/gallery06.jpg" alt=""></li>
+                        <li><img src="./image/gallery01.jpg" alt="로고명함_해녀며느리"></li>
+                        <li><img src="./image/gallery02.jpg" alt="로고명함_오하오커피"></li>
+                        <li><img src="./image/gallery03.jpg" alt="로고명함_한우연스지"></li>
+                        <li><img src="./image/gallery05.jpg" alt="로고명함_물만골마을"></li>
+                        <li><img src="./image/gallery06.jpg" alt="로고명함_고딩스"></li>
 
-                        <li><img src="./image/gallery07.jpg" alt=""></li>
-                        <li><img src="./image/gallery08.jpg" alt=""></li>
-                        <li><img src="./image/gallery09.jpg" alt=""></li>
-                        <li><img src="./image/gallery11.jpg" alt=""></li>
-                        <li><img src="./image/gallery10.jpg" alt=""></li>
+                        <li><img src="./image/gallery07.jpg" alt="돼지캐릭터 애니메이션"></li>
+                        <li><img src="./image/gallery08.jpg" alt="우리집 강아지 손그림"></li>
+                        <li><img src="./image/gallery09.jpg" alt="국악나래 행사포스터"></li>
+                        <li><img src="./image/gallery11.jpg" alt="떡볶이패키지"></li>
+                        <li><img src="./image/gallery10.jpg" alt="트레이드루키 행사포스터"></li>
                     </ul>
                 </div>
                 <footer>
@@ -501,7 +503,7 @@
                             <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오로 제작되었습니다. </p>
                         </div>
                         <div class="footer_logo">
-                            <a href="#section1"><img src="./image/footer_w_logo.png" alt=""></a>
+                            <a href="#section1"><img src="./image/footer_w_logo.png" alt="푸터로고"></a>
                         </div>
                         <ul class="sns">
                             <li><a href="mailto:gofl4198@gmail.com"><img src="./image/sns_gmaile.png" alt="메일 아이콘"></a>
@@ -584,9 +586,9 @@
             <li class="web_proj active_on">
                 <div class="left_box">
                     <div class="scrolldownAni">
-                        <img src="./image/mouse_scroll_Ani.png" alt="">
+                        <img src="./image/mouse_scroll_Ani.png" alt="마우스 스크롤 아이콘">
                     </div>
-                    <img class="product_details" src="./image/project_01.jpg" alt="">
+                    <img class="product_details" src="./image/project_01.jpg" alt="포인핸드 디자인시안">
                 </div>
                 <div class="right_DescriptionBox active_on">
                     <div class="description_info">
@@ -611,14 +613,21 @@
                                     <li>#활기찬 #궁금한 #친근한</li>
                                 </ul>
                             </li>
-                            <li class="proj_info"><a href="#"> &plus; 브랜드컬러</a>
-                            <li class="proj_info"><a href="#"> &plus; 주요기능</a>
+                                <li class="proj_info brandColor"><a href="#"> &plus; 브랜드컬러</a>
+                                    <ul id="pawinhand_Color">
+                                        <li class="color_bar"></li>
+                                        <li class="color_bar"></li>
+                                        <li class="color_bar subColor"></li>
+                                        <li class="color_bar subColor"></li>
+                                        <li class="color_bar subColor"></li>
+                                    </ul>
+                                </li>
                         </ul>
                     </div>
                     <div class="detail_butt_wrap">
                         <div class="detail_butt">
                             <button class="activeOn" type="button" onclick="location.href='https://choi-harry.github.io/pawinhand/'";>웹사이트 바로가기</button>
-                            <button type="button" onclick="location.href='https://1drv.ms/b/s!AiNbVHZG_DtojW6mK35T-2WXQJ_o?e=fFtqLC&download=1'";>기획서 다운</button>
+                            <button type="button" onclick="location.href='https://www.figma.com/file/FRWfWIxvZ3L9dsxH1xGGwA/%EA%B0%95%EA%B0%95%EC%A5%90?type=design&node-id=0-1&mode=design&t=51P4DymTD7VpoSab-0'";>기획서 다운</button>
                         </div>
                     </div>
                 </div>
@@ -626,9 +635,9 @@
             <li class="web_proj">
                 <div class="left_box">
                     <div class="scrolldownAni">
-                        <img src="./image/mouse_scroll_Ani.png" alt="">
+                        <img src="./image/mouse_scroll_Ani.png" alt="마우스 스크롤 아이콘">
                     </div>
-                    <img class="product_details" src="./image/project_02.jpg" alt="">
+                    <img class="product_details" src="./image/project_02.jpg" alt="질레트면도기 디자인시안">
                 </div>
                 <div class="right_DescriptionBox active_on">
                     <div class="description_info">
@@ -645,7 +654,7 @@
                             </li>
                             <li class="proj_info"><a href="#"> &plus; 주제및컨셉</a>
                                 <ul>
-                                    <li>남성을 주제로 질레트 면도기 신제품홍보 페이지제작</li>
+                                    <li>질레트 면도기 신제품 홍보 페이지제작</li>
                                 </ul>
                             </li>
                             <li class="proj_info"><a href="#"> &plus; 키워드</a>
@@ -653,14 +662,19 @@
                                     <li>#실험/연구 #기술력 #자신감</li>
                                 </ul>
                             </li>
-                            <li class="proj_info"><a href="#"> &plus; 브랜드컬러</a>
-                            <li class="proj_info"><a href="#"> &plus; 주요기능</a>
+                            <li class="proj_info brandColor"><a href="#"> &plus; 브랜드컬러</a>
+                                <ul id="gillette_Color">
+                                    <li class="color_bar"></li>
+                                    <li class="color_bar"></li>
+                                    <li class="color_bar"></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="detail_butt_wrap">
                         <div class="detail_butt">
-                            <button class="activeOn" type="button" onclick="location.href='https://choi-harry.github.io/pawinhand/'";>웹사이트 바로가기</button>
-                            <button type="button" onclick="location.href='https://1drv.ms/b/s!AiNbVHZG_DtojW6mK35T-2WXQJ_o?e=fFtqLC&download=1'";>기획서 다운</button>
+                            <button class="activeOn" type="button" onclick="location.href='https://choi-harry.github.io/green_gillette/'";>웹사이트 바로가기</button>
+                            <button type="button" onclick="location.href='https://onedrive.live.com/?cid=683BFC4676545B23&id=683BFC4676545B23%21150696&parId=683BFC4676545B23%21150695&o=OneUp&download=1'";>기획서 다운</button>
                         </div>
                     </div>
                 </div>
@@ -668,9 +682,9 @@
             <li class="web_proj">
                 <div class="left_box">
                     <div class="scrolldownAni">
-                        <img src="./image/mouse_scroll_Ani.png" alt="">
+                        <img src="./image/mouse_scroll_Ani.png" alt="마우스 스크롤 아이콘">
                     </div>
-                    <img class="product_details" src="./image/project_03.jpg" alt="">
+                    <img class="product_details" src="./image/project_03.jpg" alt="블루샥 디자인 시안">
                 </div>
                 <div class="right_DescriptionBox active_on">
                     <div class="description_info">
@@ -695,30 +709,35 @@
                                     <li>#청량한 #휴식 #친근한</li>
                                 </ul>
                             </li>
-                            <li class="proj_info"><a href="#"> &plus; 브랜드컬러</a>
-                            <li class="proj_info"><a href="#"> &plus; 주요기능</a>
+                            <li class="proj_info brandColor"><a href="#"> &plus; 브랜드컬러</a>
+                                <ul id="blushaak_Color">
+                                    <li class="color_bar"></li>
+                                    <li class="color_bar"></li>
+                                    <li class="color_bar"></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="detail_butt_wrap">
                         <div class="detail_butt">
-                            <button class="activeOn" type="button" onclick="location.href='https://choi-harry.github.io/pawinhand/'";>웹사이트 바로가기</button>
-                            <button type="button" onclick="location.href='https://1drv.ms/b/s!AiNbVHZG_DtojW6mK35T-2WXQJ_o?e=fFtqLC&download=1'";>기획서 다운</button>
+                            <button class="activeOn" type="button" onclick="location.href='https://choi-harry.github.io/green_blushaak/'";>웹사이트 바로가기</button>
+                            <button type="button" onclick="location.href='https://onedrive.live.com/?cid=683BFC4676545B23&id=683BFC4676545B23%21150699&parId=683BFC4676545B23%21150695&o=OneUp'";>기획서 다운</button>
                         </div>
                     </div>
                 </div>
             </li>
 
-            <li><img src="./image/project_04.jpg" alt=""></li>
-            <li><img src="./image/project_05.jpg" alt=""></li>
-            <li><img src="./image/project_06.jpg" alt=""></li>
+            <li><img src="./image/project_04.jpg" alt="야한쭈꾸미 작업물 소개 상세페이지"></li>
+            <li><img src="./image/project_05.jpg" alt="다섯시반 작업물 소개 상세페이지"></li>
+            <li><img src="./image/project_06.jpg" alt="하인앤드 작업물 소개 상세페이지"></li>
 
-            <li><img src="./image/project_07.jpg" alt=""></li>
-            <li><img src="./image/project_08.jpg" alt=""></li>
-            <li><img src="./image/project_09.jpg" alt=""></li>
+            <li><img src="./image/project_07.jpg" alt="물만골마을 작업물 소개 상세페이지"></li>
+            <li><img src="./image/project_08.jpg" alt="띵스웹진 작업물 소개 상세페이지"></li>
+            <li><img src="./image/project_09.jpg" alt="오징어짬뽕 작업물 소개 상세페이지"></li>
 
-            <li><img src="./image/Coming soon.jpg" alt=""></li>
-            <li><img src="./image/Coming soon.jpg" alt=""></li>
-            <li><img src="./image/Coming soon.jpg" alt=""></li>
+            <li><img src="./image/project_10.jpg" alt="빨간어묵 작업물 소개 상세페이지"></li>
+            <li><img src="./image/Coming soon.jpg" alt="옛맛식품 작업물 소개 상세페이지"></li>
+            <li><img src="./image/project_12.jpg" alt="대패가1900 작업물 소개 상세페이지"></li>
             <!-- <a href="https://kr.freepik.com/free-vector/realistic-tape-collection_21777803.htm#query=%ED%85%8C%EC%9D%B4%ED%94%84%20png&position=0&from_view=keyword&track=ais&uuid=d639d7cb-c9a3-436e-9fd4-f66decafb962">작가 pikisuperstar</a> 출처 Freepik -->
         </ul>
     </div>
