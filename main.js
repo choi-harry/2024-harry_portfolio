@@ -1,70 +1,6 @@
-
-
-// let mainTitle = document.querySelector('.mainMenu');
-
-// window.addEventListener('scroll',function(){
-//     let scrollvalue = window.scrollY;
-//     console.log('scrollY', value);
-// });
-// 캐릭터 마우스호버 gif로 변경
-  $(".hi_character").mouseenter(function () {
-    $("#wink", this).attr('src', "../image/hi_character.gif");
-  })
-  $(".hi_character").mouseleave(function () {
-    $("#wink", this).attr('src', "../image/hi_character.png");
-  })
-
-// menu
-let mainMenu = $('.mainMenu>li');
-
-mainMenu.mouseover(function () {
-  // mainMenu.removeClass('activeOn');
-  $(this).addClass('active');
-}).mouseout(function () {
-  $(this).removeClass('active');
-});
-
-// tabmenu
-let tabmenu = $('.tab_btn>li');
-let tabcontent = $('.tab_content>li');
-
-tabmenu.click(function (e) {
-  e.preventDefault();
-  tabmenu.removeClass('activeOn');
-  $(this).addClass('activeOn');
-
-  let target = $(this).find('a').attr('href');
-  tabcontent.removeClass('activeOn');
-  $(target).addClass('activeOn');
-});
-
-//sub tabmenu
-let subTab = $('.detail_tab>li');
-let subTabContent = $('.sub_tab_container>ul');
-
-subTab.click(function(e) {
-  e.preventDefault();
-  subTab.removeClass('activeOn');
-  $(this).addClass('activeOn'); 
-
-  let target = $(this).find('a').attr('href');
-  subTabContent.removeClass('activeOn');
-  $(target).addClass('activeOn');
-});
-//sub tabmenu2
-let subTab2 = $('.detail_tab2>li');
-let subTabContent2 = $('.stc2>ul');
-
-subTab2.click(function(e) {
-  e.preventDefault();
-  subTab2.removeClass('activeOn');
-  $(this).addClass('activeOn'); 
-
-  let target = $(this).find('a').attr('href');
-  subTabContent2.removeClass('activeOn');
-  $(target).addClass('activeOn');
-});
-
+//  |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+//          fullpage : nav,dot 연결
+//  |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
 //fullpage
 var myFullpage = new fullpage('#fullpage', {
   anchors: ['section1', 'section2', 'section3', 'section4'],
@@ -86,38 +22,122 @@ var page = $('.fullpage').fullpage({
   normalScrollElements: '.scroll'
 });
 
+// let mainTitle = document.querySelector('.mainMenu');
+
+// window.addEventListener('scroll',function(){
+//     let scrollvalue = window.scrollY;
+//     console.log('scrollY', value);
+// });
+
+//  |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+//              01 PAGE : main
+//  |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
+
+// 1. 캐릭터 마우스호버 gif로 변경
+  $(".hi_character").mouseenter(function () {
+    $("#wink", this).attr('src', "../image/hi_character.gif");
+  });
+  $(".hi_character").mouseleave(function () {
+    $("#wink", this).attr('src', "../image/hi_character.png");
+  });
+
+// 2. nav : menu 호버스타일
+let mainMenu = $('.mainMenu>li');
+
+mainMenu.mouseover(function () {
+  // mainMenu.removeClass('activeOn');
+  $(this).addClass('active');
+}).mouseout(function () {
+  $(this).removeClass('active');
+});
+
+//  |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+//              02 PAGE : about
+//  |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
+
+// 1. tabmenu : 사이드 탭버튼 내용변경
+let tabmenu = $('.tab_btn>li');
+let tabcontent = $('.tab_content>li');
+
+tabmenu.click(function (e) {
+  e.preventDefault();
+  tabmenu.removeClass('activeOn');
+  $(this).addClass('activeOn');
+
+  let target = $(this).find('a').attr('href');
+  tabcontent.removeClass('activeOn');
+  $(target).addClass('activeOn');
+});
+
+//2. sub tabmenu : 탭내부 세부내용 탭버튼
+let subTab = $('.detail_tab>li');
+let subTabContent = $('.sub_tab_container>ul');
+
+subTab.click(function(e) {
+  e.preventDefault();
+  subTab.removeClass('activeOn');
+  $(this).addClass('activeOn'); 
+
+  let target = $(this).find('a').attr('href');
+  subTabContent.removeClass('activeOn');
+  $(target).addClass('activeOn');
+});
+//2-2. sub tabmenu : 탭내부 세부내용 탭버튼
+let subTab2 = $('.detail_tab2>li');
+let subTabContent2 = $('.stc2>ul');
+
+subTab2.click(function(e) {
+  e.preventDefault();
+  subTab2.removeClass('activeOn');
+  $(this).addClass('activeOn'); 
+
+  let target = $(this).find('a').attr('href');
+  subTabContent2.removeClass('activeOn');
+  $(target).addClass('activeOn');
+});
+
+//  |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+//             03 PAGE : project
+//  |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
+
 //modal popup 스크롤해제(강현주 포폴에서 참고함)
+let projectNum = $('.slick_slider>.DetailedPage');  //[클릭할 대상] slider_box 중에서 인덱스페이지 제외한 프로젝트갤러리
+let activePage = $('.project_popup>.scroll>li'); // [클릭시 나타날 대상] project_popup 개별창 li들 : 팝업의 내용
+let projectName = $('.project_name');           //  [클릭시 나타날 대상]project_title_name >li : 팝업내용의 소제목
 
-let activePage = $('.project_popup>.scroll>li');
-let projectName = $('.project_name');
-let projectNum = $('.DetailedPage');
+  projectNum.each(function(index) { //프로젝트 갤러리 요소를 클릭시
+  $(this).find('a').on('click', function(e) { //해당요소의 a태그
+    e.preventDefault(); // a태그 기본값 해제
+    //$('.project_popup').addClass('activeOn'); //팝업창의 상위요소 : 배경
+    $('.project_popup').css('display', 'block'); //팝업창의 상위요소 : 배경
 
-  projectNum.each(function(index) {
-  $(this).find('a').on('click', function(e) {
-    e.preventDefault();
-    $('.project_popup').addClass('activeOn');
-    // 애니메이션 재생
-    activePage.removeClass('active_on');
-    $('.scrolldownAni').animate({opacity:1},3000).fadeOut();
-    activePage.eq(index).addClass('active_on');
+    $('.scrolldownAni').animate({opacity:1},3000).fadeOut(); // 1. 마우스 스크롤 애니메이션 재생
+    activePage.removeClass('active_on'); //팝업창들 전체 클래스제거
+    activePage.eq(index).addClass('active_on'); //인덱스 페이지 팝업창만 클래스활성화
     projectName.css('display', 'none');
-    projectName.eq(index).css('display', 'block');
-    $.fn.fullpage.setAllowScrolling(false); //풀페이지 스크롤 해제
-    $('html, body').css({
-      'overflow': 'hidden',
-      'height': '100%'
+    projectName.eq(index).css('display', 'block'); //인덱스 페이지의 소제목 활성화
+    //  --------------- 문제의 구간 ----------------------------
+    // $.fn.fullpage.setAllowScrolling(false); //풀페이지 스크롤 해제
+    // $('html, body').css({
+    //   'overflow': 'hidden',
+    //   'height': '100%'
+    // });
+    $('body').on('scroll touchmove mousewheel', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
     });
   });
 });
-// setTimeout(function (){
-//   $(".scrolldownAni").animate().fadeOut(); // 3초 후에 요소 숨기기
-// }, 3000);
 
 $('.project_popup .modal_close_btn').each(function() {
   $(this).on('click', function() {
-    $('.project_popup').removeClass('activeOn');
+    $('.project_popup').css('display', 'none');
     // $('.project_popup>.scroll li').eq(index).css('display', 'none');
-    $.fn.fullpage.setAllowScrolling(true); //풀페이지 스크롤 재개
+
+    //  --------------- 문제의 구간 ----------------------------
+    //$.fn.fullpage.setAllowScrolling(true); //풀페이지 스크롤 재개
+    $('body').off('scroll touchmove mousewheel');
   });
 });
 
@@ -125,15 +145,24 @@ $('.project_popup').each(function() {
   $(this).on('click', function(e) {
     if (this === e.target) //배경 클릭 시 창 닫기
       $(this).css('display', 'none');
-    $.fn.fullpage.setAllowScrolling(true);
+    //  --------------- 문제의 구간 ----------------------------
+    //$.fn.fullpage.setAllowScrolling(true);
+    $('body').off('scroll touchmove mousewheel');
   });
 });
 
+
+//  |￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣|
+//        03-2 PAGE : project-popup
+//  |＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿|
+
+//팝업 보조설명페이지 토글형태
 let textBox =$('.right_DescriptionBox');
 
 $(".modal_sm_btn").click(function(){
   textBox.toggle();
 });
+
 //슬라이드 이미지 디테일페이지
 // 1.클릭할 대상
 // let project = $('.slick_slider .DetailedPage a');
@@ -158,19 +187,19 @@ $(".modal_sm_btn").click(function(){
 
 
 // 페이지 스크롤 비활성화
-function disableScroll() {
-  // 현재 스크롤 위치를 저장
-  var scrollPosition = [
-    self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
-    self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
-  ];
-  // body에 스크롤 위치 고정
-  var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-  html.data('scroll-position', scrollPosition);
-  html.data('previous-overflow', html.css('overflow'));
-  html.css('overflow', 'hidden');
-  window.scrollTo(scrollPosition[0], scrollPosition[1]);
-}
+// function disableScroll() {
+//   // 현재 스크롤 위치를 저장
+//   var scrollPosition = [
+//     self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+//     self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+//   ];
+//   // body에 스크롤 위치 고정
+//   var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+//   html.data('scroll-position', scrollPosition);
+//   html.data('previous-overflow', html.css('overflow'));
+//   html.css('overflow', 'hidden');
+//   window.scrollTo(scrollPosition[0], scrollPosition[1]);
+// }
 
 //slickslide
 // $('.slick_slider').slick({
