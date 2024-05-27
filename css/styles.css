@@ -1591,3 +1591,79 @@ footer {
 .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow > .fp-overflow {
     overflow-y: inherit!important;
 }
+
+
+/* 반응형 */
+
+/* 1440px 이상일때 */
+@media all and (min-width:1440px) {
+    .wrapper{
+        width: 1440px;
+    }
+    html,body{
+        font-size: 62.5%;
+        font-size: 12px!important;
+    }
+}
+/* 1439이하 1200px 이상일때 */
+@media all and (min-width:1200px) and (max-width:1439px) {
+
+
+}
+/* 1199이하 720px 이상일때 */
+@media all and (max-width:1199px) {
+    .wrapper{
+        width: 100%;
+    }
+    html,body{
+        font-size: 62.5%;
+        font-size: 9px!important;
+    }
+    header .logo {
+        /* width: 64px; */
+        height: 32px;
+        position: relative;
+        /* margin-left: 3rem; */
+    }
+    header nav {
+        width: 560px;
+        align-items: center;
+        align-self: center;
+        /* justify-content: center; */
+        margin: 0;
+    }
+    .gallery_container li {
+        min-width: 190px ;
+    }
+    .gallery_container {
+        width: 100%;
+        overflow-y: hidden;
+    }
+    .hid_br{
+        display: none;
+    }
+}
+
+/* 719px이하일때 */
+@media all and (max-width:719px) {
+    nav{
+        display: none;
+    }
+    .gallery_container li {
+        flex: 1 1 32%;
+    }
+    .gallery_container {
+        width: 100%;
+        flex: 1;
+        margin-top: 24vh;
+        padding: 0 3%;
+        overflow-y: hidden;
+    }
+    .tab_content{
+        min-height: 460px;
+        overflow: hidden;
+    }
+    .character_profile{
+        display: none;
+    }
+}
