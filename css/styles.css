@@ -1602,7 +1602,7 @@ footer {
     }
     html,body{
         font-size: 62.5%;
-        font-size: 12px!important;
+        font-size: 11px!important;
     }
 }
 /* 1439이하 1200px 이상일때 */
