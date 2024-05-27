@@ -35,10 +35,10 @@ var page = $('.fullpage').fullpage({
 
 // 1. 캐릭터 마우스호버 gif로 변경
   $(".hi_character").mouseenter(function () {
-    $("#wink", this).attr('src', "../image/hi_character.gif");
+    $("#wink", this).attr('src', "./image/hi_character.gif");
   });
   $(".hi_character").mouseleave(function () {
-    $("#wink", this).attr('src', "../image/hi_character.png");
+    $("#wink", this).attr('src', "./image/hi_character.png");
   });
 
 // 2. nav : menu 호버스타일
